@@ -1,4 +1,4 @@
-package biblioteca;
+package pergamum.biblioteca;
 
 import java.util.ArrayList;
 
@@ -56,7 +56,7 @@ public class AlunoPergamum {
 
     public boolean DevolverLivro(LivroPergamum livro) {
         for (int i = 0; i < emprestimos.size(); i++) {
-            if (emprestimos[i].getCodigo() == livro.getCodigo()) {
+            if (emprestimos.get(i).getCodigo() == livro.getCodigo()) {
                 emprestimos.remove(i);
                 System.out.println("Livro devolvido.");
                 return true;

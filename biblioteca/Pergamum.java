@@ -1,4 +1,4 @@
-package biblioteca;
+package pergamum.biblioteca;
 import java.util.ArrayList;
 
 public class Pergamum {
@@ -50,7 +50,7 @@ public class Pergamum {
 
     public boolean cadastrarAluno(AlunoPergamum aluno){
         for(int i=0; i < totalAlunos; i++){
-            if (listaAlunos[i].getMatricula() == aluno.getMatricula()){
+            if (listaAlunos.get(i).getMatricula() == aluno.getMatricula()){
                 return false;
             }
         }
@@ -62,7 +62,7 @@ public class Pergamum {
 
     public String retirarAluno(int matricula){
         for(int i=0; i < totalAlunos; i++){
-            if (listaAlunos[i].getMatricula() == matricula){
+            if (listaAlunos.get(i).getMatricula() == matricula){
                 listaAlunos.remove(i);
                 totalAlunos -= 1;
                 return "Aluno removido com sucesso!";
@@ -74,11 +74,12 @@ public class Pergamum {
     public boolean cadastrarLivro(LivroPergamum livro){
         listaLivros.add(livro);
         totalLivros += 1;
+        return true;
     }
 
     public String retirarLivro(int codigo){
         for(int i=0; i < totalLivros; i++){                                          
-            if (listaLivros[i].getCodigo() == codigo){                        
+            if (listaLivros.get(i).getCodigo() == codigo){                        
                 listaLivros.remove(i);                                                  
                 totalLivros -= 1;                                                       
                 return "Livro removido com sucesso!";                                   
@@ -89,8 +90,8 @@ public class Pergamum {
 
     public LivroPergamum buscarLivro(int codigo){
         for(int i=0; i < totalLivros; i++){                                             
-             if (listaLivros[i].getCodigo() == codigo){                                  
-                return listaLivros[i];                                   
+             if (listaLivros.get(i).getCodigo() == codigo){                                  
+                return listaLivros.get(i);                                   
              }                                                                           
          }                                                                               
          return null; 

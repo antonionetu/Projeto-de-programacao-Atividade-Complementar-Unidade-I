@@ -1,6 +1,7 @@
-import biblioteca.*;
+package pergamum.biblioteca;
 
-public static void Main(Srting[] args) {
+public class Main {
+public static void Main() {
     Pergamum bibliotecaUnit = new Pergamum(1, "Carlos", 3, 3);
 
     AlunoPergamum aluno1 = new AlunoPergamum(1, "João", 3);
@@ -25,4 +26,5 @@ public static void Main(Srting[] args) {
     aluno2.DevolverLivro(livro2);
 
     aluno2.DevolverLivro(livro3);
+}
 }
