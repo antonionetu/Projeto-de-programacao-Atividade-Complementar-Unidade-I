@@ -11,7 +11,7 @@ public class Pergamum {
     private int totalAlunos;
 
     
-    Pergamum(int codigo, String nome, int totalLivros, int totalAlunos){
+    public Pergamum(int codigo, String nome, int totalLivros, int totalAlunos){
         this.codigo = codigo;
         this.nome = nome;
         this.totalLivros = totalLivros;

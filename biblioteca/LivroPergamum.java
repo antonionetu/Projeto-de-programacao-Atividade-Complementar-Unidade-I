@@ -7,7 +7,7 @@ public class LivroPergamum {
     private int exemplaresEmprestados;
 
     
-    LivroPergamum(int codigo, String titulo, String autor, String ISBN, int totalExemplares){
+    public LivroPergamum(int codigo, String titulo, String autor, String ISBN, int totalExemplares){
         this.codigo = codigo;
         this.titulo = titulo;
         this.autor = autor;
