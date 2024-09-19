@@ -1,5 +1,4 @@
-package pergamum.biblioteca;
-
+package biblioteca;
 import java.util.ArrayList;
 
 public class AlunoPergamum {
@@ -46,11 +45,11 @@ public class AlunoPergamum {
 
     public boolean EmprestarLivro(LivroPergamum livro) {
         if (emprestimos.size() >= totalLivros) {
-            System.out.println("Limite de livros emoprestado atingido.");
+            System.out.println("Limite de livros emprestado atingido.");
             return false;
         } 
         emprestimos.add(livro);
-        System.out.println("Livro emrpestado: " + livro.getTitulo());
+        System.out.println("Livro emprestado: " + livro.getTitulo());
         return true;
     }
 
@@ -62,7 +61,7 @@ public class AlunoPergamum {
                 return true;
             } 
         }
-        System.out.println("Livro não enocntrado");
+        System.out.println("Livro não encontrado");
         return false;
     }
 

@@ -1,4 +1,4 @@
-package pergamum.biblioteca;
+package biblioteca;
 import java.util.ArrayList;
 
 public class Pergamum {
